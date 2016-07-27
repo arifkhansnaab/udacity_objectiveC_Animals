@@ -11,15 +11,15 @@
 
 @interface PlaneTicket : NSObject
 
-@property (nonatomic, copy) NSString *departureCity;
-@property (nonatomic, copy) NSString *destination;
-@property (nonatomic)       NSDate *departureDate;
-@property (nonatomic, copy) NSString *seatAssignment;
-@property (nonatomic) Passenger *passenger;
+@property (nonatomic, copy) NSString * _Nullable departureCity;
+@property (nonatomic, copy) NSString * _Nullable destination;
+@property (nonatomic)       NSDate * _Nullable departureDate;
+@property (nonatomic, copy) NSString * _Nullable seatAssignment;
+@property (nonatomic) Passenger * _Nullable passenger;
 
--(instancetype)initWithDestination:(NSString*)destination
-                     departureCity:(NSString*)departureCity
-                         passenger:(Passenger*)person
-                              date:(NSDate*)departureDate;
+-(instancetype)initWithDestination:(NSString* _Nullable)destination
+                     departureCity:(NSString* _Nullable)departureCity
+                         passenger:(Passenger* _Nullable)person
+                              date:(NSDate* _Nullable)departureDate;
 
 @end
